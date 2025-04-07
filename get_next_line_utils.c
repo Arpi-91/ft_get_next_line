@@ -6,9 +6,23 @@
 /*   By: ararakel <ararakel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 16:04:57 by ararakel          #+#    #+#             */
-/*   Updated: 2025/04/06 17:11:34 by ararakel         ###   ########.fr       */
+/*   Updated: 2025/04/07 18:46:01 by ararakel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "get_next_line.h"
+
+int	ft_strlen(const char *s)
+{
+	int	count;
+
+	count = 0;
+	while (s[count] != '\0')
+	{
+		count ++;
+	}
+	return (count);
+}
 
 char	*ft_strchr(const char *c, int ch)
 {
@@ -45,17 +59,6 @@ char	*ft_strdup(const char *s1)
 	return (ptr);
 }
 
-int	ft_strlen(const char *s)
-{
-	int	count;
-
-	count = 0;
-	while (s[count] != '\0')
-	{
-		count ++;
-	}
-	return (count);
-}
 
 
 static void	ft_concat(char const *s1, char const *s2, char *s_join, int len)
@@ -93,7 +96,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (s_join);
 	}
 	len = ft_strlen(s1) + ft_strlen(s2);
-	s_join = ft_calloc(len + 1, sizeof(s1[0]));
+	s_join = (char *)malloc(len + 1);
 	if (!s_join)
 		return (NULL);
 	ft_concat(s1, s2, s_join, len);

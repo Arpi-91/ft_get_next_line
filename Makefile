@@ -8,7 +8,7 @@ INCLUDES = ./includes
 
 FLAGS = -Wall -Wextra -Werror -D BUFFER_SIZE=4
 
-SRCS = get_next_line.c test.c
+SRCS = get_next_line.c get_next_line_utils.c test.c
 
 OBJS = ${SRCS:.c=.o}
 
