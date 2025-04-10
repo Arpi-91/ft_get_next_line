@@ -6,7 +6,7 @@
 /*   By: ararakel <ararakel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 18:01:37 by ararakel          #+#    #+#             */
-/*   Updated: 2025/04/08 18:20:16 by ararakel         ###   ########.fr       */
+/*   Updated: 2025/04/09 19:03:36 by ararakel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {
-    char *filename = "files/alternate_line_nl_no_nl.txt";
+    char *filename = "files/multiple_line_no_nl.txt";
     int fd;
     char *line;
     fd = open(filename, O_RDWR);

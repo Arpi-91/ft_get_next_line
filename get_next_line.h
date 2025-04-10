@@ -27,6 +27,9 @@ int     ft_strlen(const char *s);
 char	*ft_strdup(const char *s1);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strcpy(char *dest, char *src);
+char    *get_temp_line(char *temp_line ,char *buf);
+char    *get_gn_line(char *temp_line, char * line_buf);
 
 
 #endif
